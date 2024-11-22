@@ -1,0 +1,28 @@
+﻿@model IEnumerable<PORG6212_Part3_version_3.Models.LecturerClaim>
+@{
+    ViewData["Title"] = "Finalize Claims";
+}
+
+<h2>Finalize Claims</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Hours Worked</th>
+            <th>Total Payment</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.Id</td>
+                <td>@claim.HoursWorked</td>
+                <td>@claim.TotalPayment</td>
+                <td>@claim.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
