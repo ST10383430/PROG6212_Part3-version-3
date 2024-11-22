@@ -7,4 +7,8 @@
     <RootNamespace>PORG6212_Part3_version_3</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+  </ItemGroup>
+
 </Project>
